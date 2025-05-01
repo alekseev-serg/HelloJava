@@ -53,9 +53,5 @@ public class TypeString {
         System.out.println(1 + "Welcome " + (1 + 1));
         System.out.println(1 + "Welcome " + ('\u0001' + 1));
         System.out.println(1 + "Welcome " + 'a' + 1);
-        
-        
-        
-        
     }
 }
