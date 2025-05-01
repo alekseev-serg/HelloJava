@@ -16,9 +16,26 @@ public class Convertation {
 
         System.out.print("Input sum of dollars: ");
         dollars = input.nextInt();
+
+        int digit; 
+        
+        if (dollars >= 5 && dollars <=20){
+            System.out.println(" Американских долларов равны ");
+        } else {
+            digit = dollars % 10;
+        
+            if(digit == 1){
+                System.out.println(" Американский доллар равен ");
+            } else if (digit <=2 && digit <= 4){
+                System.out.println(" Американских долларов равны ");
+            } else {
+                System.out.println(" Американских долларов равны ");
+            }
+        }
+            
         roubles = ROUBLES_PER_DOLLAR * dollars;
 
-        System.out.println("You recive total " + (int)roubles + " roubles!");
+        System.out.println((int)roubles + " roubles!");
         input.close();
     }
 }
